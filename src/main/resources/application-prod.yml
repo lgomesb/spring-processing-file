@@ -1,0 +1,21 @@
+file:
+  source:
+    value : /home/leandro/Projetos/git/learning/spring/workspace/spring-processing-file/source 
+    error: ${file.source.value}/error
+    in: ${file.source.value}/in
+    out: ${file.source.value}/out
+spring:
+  async:
+    core-pool-size: 10
+    max-pool-size: 10
+    queue-capacity: 100
+    thread-name-prefix: 'PocThread-'
+  mongodb:
+    embedded:
+        version: 3.5.5        
+  data:
+    mongodb:      
+      database: test
+      uri: mongodb://mongoadmin:102030@127.0.0.1:27017/admin   
+      auto-index-creation: true
+      
