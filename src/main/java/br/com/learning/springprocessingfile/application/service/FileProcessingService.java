@@ -19,6 +19,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.com.learning.springprocessingfile.application.helper.FileHelper;
+import br.com.learning.springprocessingfile.application.helper.RecordALayout;
+import br.com.learning.springprocessingfile.application.helper.RecordDLayout;
 import br.com.learning.springprocessingfile.domain.ErrorRecordFile;
 import br.com.learning.springprocessingfile.domain.RecordA;
 import br.com.learning.springprocessingfile.domain.RecordD;
@@ -35,10 +37,10 @@ public class FileProcessingService {
 	private RecordFileRepository repository;
 	
 	@Autowired
-	private RecordAService recordAService;
+	private RecordALayout recordAService;
 	
 	@Autowired
-	private RecordDService recordDService;
+	private RecordDLayout recordDService;
 	
 	
 	@Autowired 

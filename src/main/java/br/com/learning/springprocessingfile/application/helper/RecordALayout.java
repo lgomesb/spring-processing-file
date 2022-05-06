@@ -1,14 +1,15 @@
-package br.com.learning.springprocessingfile.application.service;
+package br.com.learning.springprocessingfile.application.helper;
 
 import org.springframework.stereotype.Service;
 
+import br.com.learning.springprocessingfile.application.service.RecordServer;
 import br.com.learning.springprocessingfile.domain.Record;
 import br.com.learning.springprocessingfile.domain.RecordA;
 import br.com.learning.springprocessingfile.domain.RecordFile;
 import br.com.learning.springprocessingfile.domain.enums.LayoutRecordA;
 
 @Service
-public class RecordAService implements RecordServer {
+public class RecordALayout implements RecordServer {
 	
 //	@Autowired 
 //	private RecordARepository recordARepository;	

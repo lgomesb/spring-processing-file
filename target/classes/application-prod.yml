@@ -10,6 +10,8 @@ spring:
     max-pool-size: 10
     queue-capacity: 100
     thread-name-prefix: 'PocThread-'
+  schedule:
+    time: 3000
   mongodb:
     embedded:
         version: 3.5.5        
