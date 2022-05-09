@@ -24,7 +24,7 @@ import br.com.learning.springprocessingfile.application.service.FileProcessingSe
 @EnableScheduling
 public class FileProcessingSchedule {
 
-	private static final int TIME_SCHEDULE = 6000;
+	private static final int TIME_SCHEDULE = 90000;
 
 	@Autowired
 	private FileProcessingService service; 

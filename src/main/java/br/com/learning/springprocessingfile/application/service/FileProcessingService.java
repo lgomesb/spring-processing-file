@@ -62,7 +62,7 @@ public class FileProcessingService {
         Integer line, startLine, endLine;  //Number of rows allocated per thread | Number of lines from which the thread reads the file | Number of end lines of file read by thread
         CompletableFuture<List<ErrorRecordFile>> future = null;
         List<ErrorRecordFile> errorRecordFiles = new ArrayList<>();
-        RecordFile recordFile = RecordFile.builder().fileName(file.getName()).build();
+        RecordFile recordFile = new RecordFile(file.getName());
         repository.save(recordFile);
         
         if( lines < threadNumber ) {        	

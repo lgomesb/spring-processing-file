@@ -32,8 +32,8 @@ public class RecordFile implements Serializable {
 	private String fileName;
 	
 	@Field
-	@Indexed( name = "recordDileIndex", expireAfterSeconds = 10)
-	private Date createDate;
+	@Indexed( name = "createAt", expireAfterSeconds = 60)
+	private Date createAt;
 	
 	private RecordA recordA; 
 	
@@ -44,7 +44,7 @@ public class RecordFile implements Serializable {
 	public RecordFile(String fileName) {
 		super();
 		this.id = UUID.randomUUID().toString();
-		this.createDate = new Date();
+		this.createAt = new Date();
 		this.fileName = fileName;
 	}
 	
